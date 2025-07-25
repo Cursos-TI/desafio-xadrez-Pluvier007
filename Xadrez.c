@@ -5,7 +5,8 @@
         for (int torre = 0; torre < 5; torre++ ) {
             printf("Direita\n");
         }
-        
+        printf("\n");
+
         //mover o bispo 5 casas pra diagonal direita
         printf("--BISPO--\n");
         int bispo = 0;
@@ -15,6 +16,7 @@
 
             bispo++;
         }
+        printf("\n");
 
         //mover a rainha 8 casas pra esquerda
         printf("--RAINHA--\n");
@@ -25,6 +27,19 @@
             rainha++;
 
         }   while (rainha < 8);
+        printf("\n");
 
+        //mover o cavalo 2 casas pra baixo e 1 pra esquerda
+        printf("--CAVALO--\n");
+        int cavalo = 1;
+        while (cavalo--)
+            {
+                for(int i = 0; i < 2; i++){
+                    printf("Baixo\n");
+                }
+                printf("Esquerda\n");
+            }
+        printf("\n");
+            
         return 0;
     }
